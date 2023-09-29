@@ -3,17 +3,17 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Remover Platatforma</title>
+        <title>Remover Jogo</title>
         <link href="/css/bootstrap.min.css" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
-            <h1>Remover Platatforma</h1>
-            <p>Tem certeza que deseja remover a plataforma "${plataforma.nome}" ?</p>
-            <form action="/plataforma/delete" method="post">
-                <input type="hidden" name="id" value="${plataforma.id}" />
+            <h1>Remover Jogo</h1>
+            <p>Tem certeza que deseja remover a jogo "${jogo.nome}" ?</p>
+            <form action="/jogo/delete" method="post">
+                <input type="hidden" name="id" value="${jogo.id}" />
                 <br />
-                <a href="/plataforma/list" class="btn btn-primary" >Voltar</a>
+                <a href="/jogo/list" class="btn btn-primary" >Voltar</a>
                 <button type="submit" class="btn btn-danger">Excluir</button>
             </form>
         </div>

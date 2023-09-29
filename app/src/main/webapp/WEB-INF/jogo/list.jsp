@@ -4,13 +4,13 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Plataformas</title>
+        <title>Jogos</title>
         <link href="/css/bootstrap.min.css" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
-        <h1>Plataformas</h1>
-            <a href="/plataforma/insert" class="btn btn-primary">Nova Plataforma</a>
+        <h1>Jogos</h1>
+            <a href="/jogo/insert" class="btn btn-primary">Nova Jogos</a>
             <table class="table">
                 <tr>
                     <th>Id</th>
@@ -18,7 +18,7 @@
                     <th>Fornecedor</th>
                     <th>&nbsp;</th>
                 </tr>
-                <c:forEach var="item" items="${plataformas}">
+                <c:forEach var="item" items="${jogos}">
                     <tr>
                         <td>${item.id}</td>
                         <td>${item.nome}</td>

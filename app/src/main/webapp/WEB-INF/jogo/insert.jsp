@@ -3,24 +3,23 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Editar Plataforma</title>
+        <title>Nova Jogo</title>
         <link href="/css/bootstrap.min.css" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
-            <h1>Editar Plataforma</h1>
-            <form action="/plataforma/update" method="post">
-                <input type="hidden" name="id" value="${plataforma.id}" />
+            <h1>Nova Jogo</h1>
+            <form action="/jogo/insert" method="post">
                 <div class="form-group">
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" class="form-control" value="${plataforma.nome}" />
+                    <input type="text" name="nome" class="form-control" />
                 </div>
                 <div class="form-group">
                     <label for="fornecedor">Fornecedor:</label>
-                    <input type="text" name="fornecedor" class="form-control" value="${plataforma.fornecedor}" />
+                    <input type="text" name="fornecedor" class="form-control" />
                 </div>
                 <br />
-                <a href="/plataforma/list" class="btn btn-primary" >Voltar</a>
+                <a href="/jogo/list" class="btn btn-primary" >Voltar</a>
                 <button type="submit" class="btn btn-success">Salvar</button>
             </form>
         </div>
